@@ -1,0 +1,128 @@
+body, h1, h2, h3, p, ul, li, button {
+    margin: 5px;
+    padding: 5px;
+}
+.text-titles{
+    color: #000000;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#Imagen1{
+    max-width: 300px;
+    height: auto;
+    border: #f4f4f4;
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 100px;
+    
+}
+#Imagen2 {
+    max-width: 300px;
+    height: auto;
+    border: #f4f4f4;
+    float: right; /* Mantener la imagen flotante a la derecha */
+    margin-left: 20px; /* Ajustar el margen izquierdo según tus necesidades */
+    margin-bottom: 20px; /* Ajustar el margen inferior según tus necesidades */
+}
+
+.section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.button-body{
+    background-color: #e2fa08;
+}
+.text-button{
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+header {
+    background-color: #e2fa08;
+    color: #fff;
+    text-align: center;
+}
+.text-header{
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+.nav-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #000000;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0066cc;
+}
+
+button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact, .always {
+    display: flex;
+    align-items: center;
+}
+
+.contact i, .always i {
+    margin-right: 5px;
+}
+
+.always {
+    margin-left: auto;
+}
