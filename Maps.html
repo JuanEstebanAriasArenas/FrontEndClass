@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="../CSS/Maps.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <title>MEGATORNILLOS</title>
+</head>
+<body>
+
+    <header>
+        <img src="" alt="">
+        <h1 class="text-header">MEGATORNILLOS</h1>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Maps.html">Puntos Fisicos</a></li>
+                <li><a href="#">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="text-titles">MIRA EN NUESTRO MAPA LOS PUNTOS FISICOS</h2>
+        <div></div><section class="section">
+           <P>¡Bienvenidos a nuestra ferretería! Estamos encantados de ofrecerte una amplia gama de productos y servicios para tus proyectos de construcción, 
+            reparación y mantenimiento del hogar.Nuestros puntos físicos están estratégicamente ubicados para servirte mejor. Contamos con tres sucursales 
+            convenientemente situadas en puntos clave de la ciudad</P>
+        </section>
+        <section id="map-container">
+        <div id="map"></div>
+
+        <script>
+            // Inicializa el mapa
+            var mymap = L.map('map').setView([40.72816, -74.07764], 13); //Coordenadas iniciales y nivel de zoom 
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(mymap);
+    
+            // Añade marcador al mapa
+            L.marker([51.5, -0.09]).addTo(mymap)
+                .bindPopup('¡Hola! Este es nuestro punto fisico principal.')
+                .openPopup();
+        </script>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="contact">
+            <i class="fas fa-envelope"></i> Contactanos
+            <P>¿Tienes preguntas sobre MEGATORNILLOS?Comunícate con nosotros. Lo que necesites, estamos aquí para ti.</P>
+        </div>
+        <div class="always">
+            Siempre a tu lado <i class="fas fa-heart"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
